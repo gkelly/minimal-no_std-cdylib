@@ -1,0 +1,11 @@
+[package]
+name = "minimal"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+lto = true
+crate-type = ["cdylib"]
+
+[profile.release]
+panic = "abort"
